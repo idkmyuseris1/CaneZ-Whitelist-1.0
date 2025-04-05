@@ -1,0 +1,21 @@
+local HWIDTable = loadstring(game:HttpGet("https://pastebin.com/raw/KbZnvA3Z"))() -- Replace with your actual table URL (e.g., Pastebin, GitHub raw)
+
+if not HWIDTable then
+    warn("Failed to load HWID table. Exiting.")
+    return -- Stop execution if the table fails to load
+end
+
+local HWID = game:GetService("RbxAnalyticsService"):GetClientId()
+
+-- More efficient whitelist check using a set for faster lookups
+local HWIDSet = {}
+for _, hwid in pairs(HWIDTable) do
+    HWIDSet[hwid] = true -- Create a set where keys are the HWIDs
+end
+
+if HWIDSet[HWID] then -- Check if the HWID exists as a key in the set
+loadstring(game:HttpGet("https://raw.githubusercontent.com/idkmyuseris1/CaneZ/refs/heads/main/CaneZ"))()
+else
+    print("The HWID is NOT Whitelisted. HWID: ", HWID)
+    game:Shutdown() -- or other action like kicking the player
+end
