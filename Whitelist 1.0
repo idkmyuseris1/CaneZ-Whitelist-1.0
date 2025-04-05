@@ -1,4 +1,4 @@
-local HWIDTable = loadstring(game:HttpGet("https://pastebin.com/raw/KbZnvA3Z"))() -- Replace with your actual table URL (e.g., Pastebin, GitHub raw)
+local HWIDTable = loadstring(game:HttpGet("https://pastebin.com/raw/zJyvBDW9"))() -- Replace with your actual table URL (e.g., Pastebin, GitHub raw)
 
 if not HWIDTable then
     warn("Failed to load HWID table. Exiting.")
