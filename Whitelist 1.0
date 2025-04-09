@@ -14,7 +14,7 @@ for _, hwid in pairs(HWIDTable) do
 end
 
 if HWIDSet[HWID] then -- Check if the HWID exists as a key in the set
-loadstring(game:HttpGet("https://raw.githubusercontent.com/idkmyuseris1/CaneZ/refs/heads/main/CaneZ"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/idkmyuseris1/Hydra/refs/heads/main/Hydra%20Loadstring"))()
 else
     print("The HWID is NOT Whitelisted. HWID: ", HWID)
     game:Shutdown() -- or other action like kicking the player
